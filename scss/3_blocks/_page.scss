@@ -3,4 +3,10 @@
   max-width: $page-width;
   margin: 0 auto;
   padding: $spacing--xlarge $spacing;
+  @include breakpoint(medium) {
+    padding-top: 7em;
+  }
+  @include breakpoint(large) {
+    padding-top: 10em;
+  }
 }

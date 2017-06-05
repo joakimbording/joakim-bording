@@ -233,6 +233,12 @@ Design components, seperated as blocks.
   max-width: 37rem;
   margin: 0 auto;
   padding: 3.6rem 1rem; }
+  @media (min-width: 51.25rem) {
+    .page {
+      padding-top: 7em; } }
+  @media (min-width: 68.75rem) {
+    .page {
+      padding-top: 10em; } }
 
 .info {
   display: block;
