@@ -30,7 +30,7 @@
 
   <main class="page">
 		<h1>Joakim Bording</h1>
-		<p>Rådgiver, designer, utvikler og kursholder. Jeg kan hjelpe deg til å nå dine forretningsmål gjennom design. Jeg jobber som frilanser i Oslo og er åpen for oppdrag.</p>
+		<p>Rådgiver, designer, utvikler og kursholder. Jeg kan hjelpe deg med å nå dine forretningsmål gjennom design. Jeg jobber som frilanser i Oslo og er åpen for oppdrag.</p>
 		<dl class="info-list">
 			<div class="info-list__item info-list__item--large">
 				<div class="info info--large">
