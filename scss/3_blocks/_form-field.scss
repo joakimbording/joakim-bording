@@ -1,0 +1,117 @@
+
+.form-field {
+  display: block;
+  margin-bottom: $spacing--large;
+  width: 100%;
+  input[type='text'], input[type='password'], input[type='number'], input[type='tel'], input[type='email'], textarea {
+    width: 100%;
+  }
+  @include breakpoint(small){
+     max-width: 23rem;
+   }
+  &__label {
+    @extend %h4;
+    line-height: 1.5;
+    margin-bottom: $spacing--small;
+    font-size: 1rem;
+    &--small {
+      font-size: 0.85rem;
+      line-height: 1.3rem;
+      font-style: normal;
+      margin: 0;
+    }
+  }
+
+  &__group-title {
+    @extend %h3;
+    display: block;
+    width: 100%;
+    box-sizing: content-box;
+    border-top: 2px solid $color__white;
+    padding-top: $spacing--large;
+    margin-bottom: $spacing--large;
+    margin-left: -$spacing;
+    padding-left: $spacing;
+    margin-right: -$spacing;
+    padding-right: $spacing;
+    @include breakpoint(small){
+      margin-left: -$spacing--large;
+      padding-left: $spacing--large;
+      margin-right: -$spacing--large;
+      padding-right: $spacing--large;
+    }
+  }
+
+  &__error-message, &__description {
+    line-height: 1.5;
+    margin-top: $spacing;
+    color: $color__black;
+  }
+
+  &--error {
+    border-left: 4px solid $color__obos-red;
+    padding-left: $spacing;
+    margin-left: -$spacing;
+  }
+
+  &--center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    label, legend {
+      text-align: center;
+    }
+  }
+
+  &--small {
+    > .form-combination, input {
+      max-width: 13em;
+    }
+  }
+
+ &--disabled {
+   .form-field__label {
+     color: $color__gray-text;
+   }
+ }
+
+  &--group {
+    max-width: 100%;
+  }
+
+  &--fullwidth {
+    max-width: 100%;
+  }
+  &--footer {
+    margin-top: $spacing--large;
+    margin-bottom: 0;
+  }
+  &--menubar {
+    max-width: 100%;
+    @include breakpoint(medium){
+      margin: 0;
+      input[type=text] {
+        border-color: transparent;
+        width: 6rem;
+        transition: all 200ms ease;
+        min-height: 48px;
+        padding-right: 3rem;
+        margin: 0;
+        &:focus {
+          width: 12rem;
+          box-shadow: -32px 0px 40px 1px #fff;
+        }
+      }
+      input[type=text] + button {
+        pointer-events: none;
+        margin-right: $spacing--small;
+        top: 2px;
+      }
+      input[type=text]:focus + button {
+        pointer-events: auto;
+      }
+    }
+
+  }
+}

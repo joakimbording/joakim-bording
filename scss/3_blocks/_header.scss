@@ -1,0 +1,18 @@
+.header {
+    max-width: $page-width;
+    margin: 0 auto;
+    &__skip-to-content {
+      position: absolute;
+      display: block;
+      line-height: 1;
+      padding: $spacing--small $spacing $spacing--small $spacing;
+      background:  $color__white;
+      transition: top 150ms ease;
+      top: -75%;
+      &:focus {
+        top: $spacing--small;
+        border-color: $color__secondary;
+        box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+      }
+    }
+}

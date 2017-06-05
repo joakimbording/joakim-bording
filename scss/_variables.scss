@@ -1,0 +1,68 @@
+/*
+
+OBOS Merkevarehåndbok
+
+*/
+
+// ------------------------------------
+// Identity colors
+// ------------------------------------
+
+$color__blue: #0d4fa7; // 7.8 white contrast
+$color__green: #00aa79; // 3.0 white contrast
+$color__green--dark: #018761; // 4.5 white contrast
+$color__green--light: #cdece2; //
+$color__red: #cd465e; // 4.5 white contrast. Adjusted from: #D44E66;
+$color__yellow: #E8A74A;
+$color__gray: #F1F1F1;
+
+// ------------------------------------
+// Functional use of colors
+// ------------------------------------
+
+$color__primary: $color__blue;
+$color__secondary: $color__green;
+$color__secondary--light: $color__green--light;
+$color__black: #333;
+$color__white: #fff;
+$color__gray: $color__gray;
+$color__gray--dark: #AAA;
+$color__gray-text: #777;
+
+// ------------------------------------
+// Spacing
+// ------------------------------------
+
+$spacing: 1rem;
+$spacing--small: .5rem;
+$spacing--large: 1.8rem;
+$spacing--xlarge: 3.6rem;
+
+$page-width: 37rem;
+$page-width--wide: 65rem;
+$page-width--xwide: 80rem;
+
+// ------------------------------------
+// Breakpoints
+// ------------------------------------
+
+$breakpoints: (
+    small: 480,
+    medium: 820,
+    large: 1100,
+    wide: 1200,
+);
+
+// ------------------------------------
+// Typography
+// ------------------------------------
+
+$font: 'Arvo', 'Helvetica', sans-serif;
+$font--secondary: 'Arvo', 'Helvetica', sans-serif;
+
+// ------------------------------------
+// Lineheight
+// ------------------------------------
+
+$lineheight: 1.8;
+$lineheight--small: 1.7;

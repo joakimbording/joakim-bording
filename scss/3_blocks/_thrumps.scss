@@ -1,0 +1,50 @@
+.t-only-screenreaders {
+	position: absolute;
+	overflow: hidden;
+	width:1px;
+	height:1px;
+}
+
+.placeholder {
+	@extend h2;
+	text-align: center;
+	font-style: italic;
+	font-weight: normal;
+	padding: $spacing--large;
+	color: $color__secondary;
+	border: 2px dashed $color__secondary;
+	background: $color__secondary--light;
+}
+
+.t-focus-section:focus {
+	outline: none;
+}
+
+.t-text-align-right {
+		text-align: right;
+}
+
+.t-no-top-margin {
+	margin-top: 0 !important;
+}
+
+// TODO Remove!
+.Select-control {
+	line-height: 2.5rem !important;
+	min-height: calc(2.5rem + 6px);
+	border: none !important;
+	border-bottom: 2px solid #0d4fa7 !important;
+	border-radius: 0px !important;
+	overflow: auto !important;
+}
+.Select-menu-outer {
+	  z-index: 999 !important;
+		box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.33);
+}
+.Select.is-open { position: relative !important; z-index: 1000 !important; }
+
+.Select-input > input { line-height: normal !important; min-height: 0px !important; }
+
+.Select-placeholder, .Select--single > .Select-control .Select-value {
+	top: 7px !important;
+}
