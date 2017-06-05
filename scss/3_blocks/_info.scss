@@ -1,0 +1,39 @@
+.info {
+    display: block;
+    margin-bottom: $spacing;
+    &__title {
+      @extend p;
+      display: block;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+      //color: $color__primary;
+    }
+    &__value {
+      @extend %h3;
+      font-weight: 400;
+      display: block;
+      margin-bottom: 0;
+    }
+    &--list {
+      margin: 0;
+      .info__title {
+        display: inline;
+        font-weight: normal;
+        &:after {
+          content: ':';
+        }
+      }
+      .info__value {
+        @extend p;
+        font-weight: bold;
+        display: inline;
+      }
+    }
+    &--large, &--huge {
+      .info__value {
+        @extend %h2;
+        margin: 0;
+        color: $color__primary;
+      }
+    }
+}

@@ -164,13 +164,16 @@ small {
 }
 
 a, .link {
-  color: $color__primary;
+  color: $color__black;
   text-decoration: none;
-  border-bottom: 2px solid $color__primary;
+  border-bottom: 4px solid $color__gray;
+  transition: border 200ms ease;
   &:hover, &:focus {
+    color: $color__primary;
     border-bottom-color: $color__primary;
   }
   &:active {
+    color: $color__primary;
     border-bottom-color: $color__primary;
   }
 }

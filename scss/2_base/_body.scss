@@ -25,5 +25,6 @@ body {
 }
 
 *:focus {
-  outline-color: $color__secondary;
+  outline-offset: 5px;
+  outline-color: $color__gray;
 }

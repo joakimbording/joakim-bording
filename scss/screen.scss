@@ -19,7 +19,7 @@ Code used by the other components and helper classes.
 
 */
 @import 'scss/1_tools/mixins';
-@import 'scss/1_tools/animations';
+//@import 'scss/1_tools/animations';
 
 /*
 Base
@@ -30,10 +30,10 @@ Styling of default html elements.
 @import 'scss/2_base/body';
 @import 'scss/2_base/fonts';
 @import 'scss/2_base/typography';
-@import 'scss/2_base/lists';
-@import 'scss/2_base/tables';
-@import 'scss/2_base/images';
-@import 'scss/2_base/forms';
+//@import 'scss/2_base/lists';
+//@import 'scss/2_base/tables';
+//@import 'scss/2_base/images';
+//@import 'scss/2_base/forms';
 
 /*
 Blocks
@@ -42,7 +42,9 @@ Design components, seperated as blocks.
 
 */
 @import 'scss/3_blocks/page';
-@import 'scss/3_blocks/header';
+@import 'scss/3_blocks/info';
+@import 'scss/3_blocks/info-list';
+//@import 'scss/3_blocks/header';
 //@import 'scss/3_blocks/icon';
 //@import 'scss/3_blocks/flag';
 //@import 'scss/3_blocks/image-wrapper';

@@ -16,7 +16,7 @@ Thumbs.db
 ######################
 .scssc
 .sass-cache
-assets/img/resized/*
+*.hot-update.*
 
 # NPM #
 ######################
