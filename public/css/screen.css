@@ -208,14 +208,14 @@ small {
 a, .link {
   color: #333;
   text-decoration: none;
-  border-bottom: 4px solid #ccc;
-  transition: border 200ms ease; }
+  background-image: linear-gradient(to top, transparent, transparent 0px, #333 0px, #333 1px, transparent 1px);
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  transition: background-image 200ms ease; }
   a:hover, a:focus, .link:hover, .link:focus {
-    color: #d5312a;
-    border-bottom-color: #d5312a; }
+    color: #2779C5;
+    background-image: linear-gradient(to top, transparent, transparent 0px, #2779C5 0px, #2779C5 1px, transparent 1px); }
   a:active, .link:active {
-    color: #d5312a;
-    border-bottom-color: #d5312a; }
+    color: #2779C5; }
 
 .link--white {
   color: #fff; }
@@ -263,7 +263,7 @@ Design components, seperated as blocks.
       display: inline; }
   .info--large .info__value, .info--huge .info__value {
     margin: 0;
-    color: #d5312a; }
+    color: #2779C5; }
 
 .info-list {
   display: -ms-flexbox;

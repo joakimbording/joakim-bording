@@ -166,15 +166,18 @@ small {
 a, .link {
   color: $color__black;
   text-decoration: none;
-  border-bottom: 4px solid $color__gray;
-  transition: border 200ms ease;
+  //border-bottom: 2px solid $color__black;
+  background-image: linear-gradient(to top, transparent, transparent 0px, $color__black 0px, $color__black 1px, transparent 1px);
+  text-shadow: -1px -1px 0 $color__white, 1px -1px 0 $color__white, -1px 1px 0 $color__white, 1px 1px 0 $color__white;
+  transition: background-image 200ms ease;
   &:hover, &:focus {
     color: $color__primary;
-    border-bottom-color: $color__primary;
+    background-image: linear-gradient(to top, transparent, transparent 0px, $color__primary 0px, $color__primary 1px, transparent 1px);
+    //border-bottom-color: $color__primary;
   }
   &:active {
     color: $color__primary;
-    border-bottom-color: $color__primary;
+    //border-bottom-color: $color__primary;
   }
 }
 
