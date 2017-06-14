@@ -1,4 +1,4 @@
-.page {
+.card {
   background: $color__white;
   @include breakpoint(medium) {
     display: flex;
@@ -47,12 +47,12 @@
   }
   &--flip {
     @include breakpoint(medium) {
-      .page__visual {
+      .card__visual {
         order: 2;
         flex-basis: 66.66%;
         max-width: 66.66%;
       }
-      .page__content {
+      .card__content {
         order: 1;
         flex-basis: 33.33%;
         max-width: 33.33%;
@@ -63,7 +63,7 @@
     @include breakpoint(large) {
       min-height: auto;
     }
-    .page__content {
+    .card__content {
       background: $color__black;
       color: $color__white;
       -webkit-font-smoothing: antialiased;
