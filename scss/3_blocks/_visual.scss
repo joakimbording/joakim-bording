@@ -15,4 +15,12 @@
       object-fit: cover; // Need polyfill for IE
     }
   }
+  &--map {
+    width: 100%;
+    height: 400px;
+    @include breakpoint(medium) {
+      height: 100%;
+    }
+
+  }
 }

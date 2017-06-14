@@ -1,5 +1,6 @@
 <?php
 	$versionSlug = 'v1.2';
+	$googleMapAPI = 'AIzaSyB95dBtXMULdBz11DXjdQBRw6YPUuU8TlM';
 	$introText = 'Rådgiver, designer, utvikler og kursholder. Jeg kan hjelpe deg med å nå dine forretningsmål gjennom design. Jeg jobber som frilanser i Oslo og er åpen for oppdrag.';
 ?>
 <!doctype html>
@@ -26,7 +27,7 @@
     // Picture element HTML5 shiv
     document.createElement( "picture" );
   </script>
-  <script src="js/main.js?<?php echo $versionSlug; ?>" async></script>
+  <script src="js/main.js?<?php echo $versionSlug; ?>"></script>
 
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -90,7 +91,7 @@
 			<div class="card__content">
 				<div class="card__text-frame">
 					<h2>Design og front-end utvikling</h2>
-					<p>Jeg kan realisere ideer. Design og teknologi er nært knyttet. Jeg har lang erfaring innen webutvikling på et profesjonelt nivå..
+					<p>Jeg kan realisere ideer. Design og teknologi er nært knyttet. Jeg har lang erfaring innen webutvikling på et profesjonelt nivå.
 				</div>
 			</div>
 			<div class="card__content">
@@ -109,20 +110,20 @@
 			</div>
 			<div class="card__content">
 				<div class="card__text-frame">
-					<h2 class="h1"><small>Case: </small>OBOS Merkevare</h2>
-					<p>Vi moderniserte OBOS konsernet sin visuelle identitet på digitale flater. Identiteten ble utformet og dokumentert i en nettbasert merkevarehåndbok. Designsystemet og front-end koden som jeg utviklet for styleguiden har blitt brukt videre for å redesigne <a href="https://www.obos.no/">obos.no</a>.</p>
-					<p>Jeg hadde ansvar for interaksjonsdesign og front-end utvikling i prosjektet. Jeg hadde den primære kundekontakten med OBOS og fulgte dem opp på implementering av designet.</p>
+					<h2 class="h1"><small>Case: </small>OBOS Designsystem</h2>
+					<p>Vi moderniserte OBOS konsernet sin visuelle identitet på digitale flater. Arbeidet ble dokumentert i en nettbasert merkevarehåndbok bygget i <a href="https://craftcms.com/">Craft CMS</a>. Designsystemet og front-end koden som jeg utviklet for styleguiden har blitt brukt videre av samarbeidspartnere til å redesigne <a href="https://www.obos.no/">obos.no</a> (lanseres snart).</p>
+					<p>Jeg hadde ansvar for interaksjonsdesign og front-end utvikling i prosjektet. Jeg hadde den primære kundekontakten med OBOS og redesignet navigasjonsstrukturen til obos.no i løpet av prosjektet.</p>
 					<p><small>Prosjektet ble gjort våren 2017 i <a href="https://www.netliferesearch.com/">Netlife Research</a> sammen med <a href="https://www.netliferesearch.com/eivind-molvaer">Eivind Molvær</a> og <a href="https://www.linkedin.com/in/anette-mork-8b23a81b/">Anette Mork</a>.</small></p>
 					<div class="info">
 						<span class="info__title">Se resultatet:</span>
-						<span class="info__value"><a href="https://merkevare.obos.no/">merkevare.obos.no</a></span>
+						<span class="info__value"><a href="https://merkevare.obos.no/">merkevare.obos.no</a> og <a href="https://obos.no/">obos.no</a></span>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="card card--flip">
 			<div class="card__visual">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.066470442301!2d10.737523616106998!3d59.914444181867374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7d14f254e9%3A0xae4ee237206e6a58!2sRosenkrantz&#39;+gate+10%2C+0159+Oslo!5e0!3m2!1sno!2sno!4v1497454725900" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div id="map_canvas" class="visual visual--map"></div>
 			</div>
 			<div class="card__content">
 				<div class="card__text-frame">
@@ -135,4 +136,6 @@
 				</div>
 			</div>
 	</main>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=<?php echo $googleMapAPI; ?>&callback=initMap"
+ type="text/javascript"></script>
 </body>

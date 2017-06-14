@@ -107,7 +107,9 @@ h6,
   h5 small,
   h6 small, .info--large .info__value small, .info--huge .info__value small, .info__value small {
     display: block;
-    color: #777; }
+    color: #777;
+    font-weight: 400;
+    font-size: 0.66em; }
 
 h1,
 .h1 {
@@ -213,7 +215,7 @@ hr {
   background-color: #ccc; }
 
 small {
-  font-size: 0.75em;
+  font-size: 0.85em;
   line-height: 1.3em; }
 
 a, .link {
@@ -255,7 +257,14 @@ Design components, seperated as blocks.
           align-items: stretch; } }
   @media (min-width: 62.5rem) {
     .card {
-      min-height: 90vh; } }
+      min-height: 90vh; }
+      .card__visual, .card__content {
+        min-height: 90vh; } }
+  @media (min-width: 112.5rem) {
+    .card {
+      min-height: 70vh; }
+      .card__visual, .card__content {
+        min-height: 70vh; } }
   .card__visual {
     background: #71baff;
     position: relative; }
@@ -265,11 +274,9 @@ Design components, seperated as blocks.
         -ms-flex-preferred-size: 33.33%;
             flex-basis: 33.33%;
         max-width: 33.33%; } }
-    @media (min-width: 62.5rem) {
-      .card__visual {
-        min-height: 90vh; } }
     .card__visual:after {
       content: '';
+      pointer-events: none;
       display: block;
       position: absolute;
       top: 0;
@@ -280,7 +287,7 @@ Design components, seperated as blocks.
     padding: 1.8rem 1rem 1.8rem 1rem; }
     @media (min-width: 45rem) {
       .card__content {
-        padding: 1.8rem;
+        padding: 3.6rem;
         -ms-flex-preferred-size: 66.66%;
             flex-basis: 66.66%;
         max-width: 66.66%;
@@ -288,9 +295,9 @@ Design components, seperated as blocks.
         display: flex;
         -ms-flex-align: center;
             align-items: center; } }
-    @media (min-width: 62.5rem) {
+    @media (min-width: 112.5rem) {
       .card__content {
-        min-height: 90vh; } }
+        padding: 3.6rem; } }
   .card__text-frame {
     max-width: 37rem; }
   @media (min-width: 45rem) {
@@ -394,3 +401,9 @@ Design components, seperated as blocks.
         position: absolute;
         height: 100%;
         object-fit: cover; } }
+  .visual--map {
+    width: 100%;
+    height: 400px; }
+    @media (min-width: 45rem) {
+      .visual--map {
+        height: 100%; } }

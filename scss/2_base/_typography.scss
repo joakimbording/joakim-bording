@@ -36,6 +36,8 @@ h6,
     small {
       display: block;
       color: $color__gray-text;
+      font-weight: 400;
+      font-size: 0.66em;
     }
 }
 
@@ -163,7 +165,7 @@ hr {
 }
 
 small {
-    font-size: 0.75em;
+    font-size: 0.85em;
     line-height: 1.3em;
 }
 

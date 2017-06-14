@@ -7,6 +7,15 @@
   }
   @include breakpoint(large) {
     min-height: 90vh;
+    &__visual, &__content {
+      min-height: 90vh;
+    }
+  }
+  @include breakpoint(wide) {
+    min-height: 70vh;
+    &__visual, &__content {
+      min-height: 70vh;
+    }
   }
   &__visual {
     background: $color__secondary--light;
@@ -16,11 +25,9 @@
       flex-basis: 33.33%;
       max-width: 33.33%;
     }
-    @include breakpoint(large) {
-      min-height: 90vh;
-    }
     &:after {
       content: '';
+      pointer-events: none;
       display: block;
       position: absolute;
       top: 0;
@@ -32,14 +39,14 @@
   &__content {
     padding: $spacing--large $spacing $spacing--large $spacing;
     @include breakpoint(medium) {
-      padding: $spacing--large;
+      padding: $spacing--xlarge;
       flex-basis: 66.66%;
       max-width: 66.66%;
       display: flex;
       align-items: center;
     }
-    @include breakpoint(large) {
-      min-height: 90vh;
+    @include breakpoint(wide) {
+      padding: $spacing--xlarge;
     }
   }
   &__text-frame {
