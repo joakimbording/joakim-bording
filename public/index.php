@@ -1,3 +1,6 @@
+<?php
+	$versionSlug = 'v1.1';
+?>
 <!doctype html>
 
 <head>
@@ -15,13 +18,13 @@
 	<meta property="og:image" content="/images/landscape_joakim_bording.jpg" />
 	<meta name='twitter:url' content='http://joakim.bording.no'>
 
-  <link rel="stylesheet" href="/css/screen.css">
+  <link rel="stylesheet" href="/css/screen.css?<?php echo $versionSlug; ?>">
 
 	<script>
     // Picture element HTML5 shiv
     document.createElement( "picture" );
   </script>
-  <script src="js/main.js" async></script>
+  <script src="js/main.js?<?php echo $versionSlug; ?>" async></script>
 
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
