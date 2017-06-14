@@ -243,10 +243,10 @@ Blocks
 Design components, seperated as blocks.
 
 */
-.page {
+.card {
   background: #fff; }
   @media (min-width: 45rem) {
-    .page {
+    .card {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: row;
@@ -254,21 +254,21 @@ Design components, seperated as blocks.
       -ms-flex-align: stretch;
           align-items: stretch; } }
   @media (min-width: 62.5rem) {
-    .page {
+    .card {
       min-height: 90vh; } }
-  .page__visual {
+  .card__visual {
     background: #71baff;
     position: relative; }
     @media (min-width: 45rem) {
-      .page__visual {
+      .card__visual {
         position: relative;
         -ms-flex-preferred-size: 33.33%;
             flex-basis: 33.33%;
         max-width: 33.33%; } }
     @media (min-width: 62.5rem) {
-      .page__visual {
+      .card__visual {
         min-height: 90vh; } }
-    .page__visual:after {
+    .card__visual:after {
       content: '';
       display: block;
       position: absolute;
@@ -276,10 +276,10 @@ Design components, seperated as blocks.
       width: 100%;
       height: 100%;
       box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1); }
-  .page__content {
+  .card__content {
     padding: 1.8rem 1rem 1.8rem 1rem; }
     @media (min-width: 45rem) {
-      .page__content {
+      .card__content {
         padding: 1.8rem;
         -ms-flex-preferred-size: 66.66%;
             flex-basis: 66.66%;
@@ -289,33 +289,33 @@ Design components, seperated as blocks.
         -ms-flex-align: center;
             align-items: center; } }
     @media (min-width: 62.5rem) {
-      .page__content {
+      .card__content {
         min-height: 90vh; } }
-  .page__text-frame {
+  .card__text-frame {
     max-width: 37rem; }
   @media (min-width: 45rem) {
-    .page--flip .page__visual {
+    .card--flip .card__visual {
       -ms-flex-order: 2;
           order: 2;
       -ms-flex-preferred-size: 66.66%;
           flex-basis: 66.66%;
       max-width: 66.66%; }
-    .page--flip .page__content {
+    .card--flip .card__content {
       -ms-flex-order: 1;
           order: 1;
       -ms-flex-preferred-size: 33.33%;
           flex-basis: 33.33%;
       max-width: 33.33%; } }
   @media (min-width: 62.5rem) {
-    .page--triple {
+    .card--triple {
       min-height: auto; } }
-  .page--triple .page__content {
+  .card--triple .card__content {
     background: #333;
     color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
     @media (min-width: 45rem) {
-      .page--triple .page__content {
+      .card--triple .card__content {
         -ms-flex-preferred-size: 33.33%;
             flex-basis: 33.33%;
         max-width: 33.33%;
@@ -323,11 +323,11 @@ Design components, seperated as blocks.
         padding-top: 3.6rem;
         padding-bottom: 3.6rem; } }
     @media (min-width: 62.5rem) {
-      .page--triple .page__content {
+      .card--triple .card__content {
         min-height: auto; } }
-    .page--triple .page__content:first-child {
+    .card--triple .card__content:first-child {
       background: #444; }
-    .page--triple .page__content:last-child {
+    .card--triple .card__content:last-child {
       background: #222; }
 
 .info {
