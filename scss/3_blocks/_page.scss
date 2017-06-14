@@ -4,35 +4,86 @@
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
   }
   @include breakpoint(large) {
-    min-height: 100vh;
+    min-height: 90vh;
   }
   &__visual {
     background: $color__secondary--light;
+    position: relative;
     @include breakpoint(medium) {
       position: relative;
       flex-basis: 33.33%;
       max-width: 33.33%;
     }
     @include breakpoint(large) {
-      min-height: 100vh;
+      min-height: 90vh;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
     }
   }
   &__content {
-    max-width: $page-width;
-    padding: $spacing--large $spacing $spacing--xlarge $spacing;
+    padding: $spacing--large $spacing $spacing--large $spacing;
     @include breakpoint(medium) {
-      padding-top: $spacing--xlarge;
-      padding-left: $spacing--xlarge;
-      padding-top: 7em;
+      padding: $spacing--large;
       flex-basis: 66.66%;
-      max-width: $page-width;
+      max-width: 66.66%;
+      display: flex;
+      align-items: center;
     }
     @include breakpoint(large) {
-      padding-top: 10em;
-      min-height: 100vh;
+      min-height: 90vh;
+    }
+  }
+  &__text-frame {
+    max-width: $page-width;
+  }
+  &--flip {
+    @include breakpoint(medium) {
+      .page__visual {
+        order: 2;
+        flex-basis: 66.66%;
+        max-width: 66.66%;
+      }
+      .page__content {
+        order: 1;
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+      }
+    }
+  }
+  &--triple {
+    @include breakpoint(large) {
+      min-height: auto;
+    }
+    .page__content {
+      background: $color__black;
+      color: $color__white;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      @include breakpoint(medium) {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+        display: block;
+        padding-top: $spacing--xlarge;
+        padding-bottom: $spacing--xlarge;
+      }
+      @include breakpoint(large) {
+        min-height: auto;
+      }
+      &:first-child {
+        background: $color__black--light;
+      }
+      &:last-child {
+        background: $color__black--dark;
+      }
     }
   }
 }

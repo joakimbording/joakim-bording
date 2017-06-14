@@ -100,18 +100,29 @@ h6,
   font-weight: 500;
   margin-bottom: 0.5rem;
   line-height: 1.5; }
+  h1 small,
+  h2 small,
+  h3 small,
+  h4 small,
+  h5 small,
+  h6 small, .info--large .info__value small, .info--huge .info__value small, .info__value small {
+    display: block;
+    color: #777; }
 
-h1 {
+h1,
+.h1 {
   font-size: 1.75rem;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 0.5rem; }
   @media (min-width: 30rem) {
-    h1 {
+    h1,
+    .h1 {
       margin-top: 0;
       font-size: 2.00rem; } }
   @media (min-width: 45rem) {
-    h1 {
+    h1,
+    .h1 {
       font-size: 2.50rem; } }
 
 h2,
@@ -119,14 +130,14 @@ h2,
 .info--huge .info__value,
 .h2 {
   font-size: 1.33rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 2rem; }
-  @media (min-width: 30rem) {
+  @media (min-width: 45rem) {
     h2,
     .info--large .info__value,
     .info--huge .info__value,
     .h2 {
-      font-size: 1.50rem; } }
+      font-size: 1.5rem; } }
   h2:first-child,
   .info--large .info__value:first-child,
   .info--huge .info__value:first-child,
@@ -202,8 +213,8 @@ hr {
   background-color: #ccc; }
 
 small {
-  font-size: 0.85rem;
-  line-height: 1.3rem; }
+  font-size: 0.75em;
+  line-height: 1.3em; }
 
 a, .link {
   color: #333;
@@ -241,13 +252,13 @@ Design components, seperated as blocks.
       -ms-flex-direction: row;
           flex-direction: row;
       -ms-flex-align: stretch;
-          align-items: stretch;
-      box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1); } }
+          align-items: stretch; } }
   @media (min-width: 62.5rem) {
     .page {
-      min-height: 100vh; } }
+      min-height: 90vh; } }
   .page__visual {
-    background: #71baff; }
+    background: #71baff;
+    position: relative; }
     @media (min-width: 45rem) {
       .page__visual {
         position: relative;
@@ -256,22 +267,68 @@ Design components, seperated as blocks.
         max-width: 33.33%; } }
     @media (min-width: 62.5rem) {
       .page__visual {
-        min-height: 100vh; } }
+        min-height: 90vh; } }
+    .page__visual:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1); }
   .page__content {
-    max-width: 37rem;
-    padding: 1.8rem 1rem 3.6rem 1rem; }
+    padding: 1.8rem 1rem 1.8rem 1rem; }
     @media (min-width: 45rem) {
       .page__content {
-        padding-top: 3.6rem;
-        padding-left: 3.6rem;
-        padding-top: 7em;
+        padding: 1.8rem;
         -ms-flex-preferred-size: 66.66%;
             flex-basis: 66.66%;
-        max-width: 37rem; } }
+        max-width: 66.66%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center; } }
     @media (min-width: 62.5rem) {
       .page__content {
-        padding-top: 10em;
-        min-height: 100vh; } }
+        min-height: 90vh; } }
+  .page__text-frame {
+    max-width: 37rem; }
+  @media (min-width: 45rem) {
+    .page--flip .page__visual {
+      -ms-flex-order: 2;
+          order: 2;
+      -ms-flex-preferred-size: 66.66%;
+          flex-basis: 66.66%;
+      max-width: 66.66%; }
+    .page--flip .page__content {
+      -ms-flex-order: 1;
+          order: 1;
+      -ms-flex-preferred-size: 33.33%;
+          flex-basis: 33.33%;
+      max-width: 33.33%; } }
+  @media (min-width: 62.5rem) {
+    .page--triple {
+      min-height: auto; } }
+  .page--triple .page__content {
+    background: #333;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+    @media (min-width: 45rem) {
+      .page--triple .page__content {
+        -ms-flex-preferred-size: 33.33%;
+            flex-basis: 33.33%;
+        max-width: 33.33%;
+        display: block;
+        padding-top: 3.6rem;
+        padding-bottom: 3.6rem; } }
+    @media (min-width: 62.5rem) {
+      .page--triple .page__content {
+        min-height: auto; } }
+    .page--triple .page__content:first-child {
+      background: #444; }
+    .page--triple .page__content:last-child {
+      background: #222; }
 
 .info {
   display: block;
@@ -330,7 +387,8 @@ Design components, seperated as blocks.
       height: 100%; } }
   .visual__image {
     display: block;
-    width: 100%; }
+    width: 100%;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4); }
     @media (min-width: 45rem) {
       .visual__image {
         position: absolute;
