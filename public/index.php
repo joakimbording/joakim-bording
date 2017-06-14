@@ -1,5 +1,6 @@
 <?php
 	$versionSlug = 'v1.1';
+	$introText = 'Rådgiver, designer, utvikler og kursholder. Jeg kan hjelpe deg med å nå dine forretningsmål gjennom design. Jeg jobber som frilanser i Oslo og er åpen for oppdrag.';
 ?>
 <!doctype html>
 
@@ -7,11 +8,12 @@
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Joakim Bording</title>
-	<meta name='description' content='Rådgiver, designer, utvikler og kursholder. Jeg kan hjelpe deg med å nå dine forretningsmål gjennom design. Jeg jobber som frilanser i Oslo og er åpen for oppdrag.' />
+  <title>Joakim Bording | Senior interaksjonsdesigner</title>
+	<meta name='description' content='<?php echo $introText; ?>' />
 	<meta name='keywords' content='design, brukeropplevelse, frilanser, front-end' />
 	<link rel='canonical' href='http://joakim.bording.no' />
-	<meta property='og:title' content='Joakim Bording' />
+	<meta property='og:title' content='Joakim Bording | Senior interaksjonsdesigner' />
+	<meta property='og:description' content='<?php echo $introText; ?>' />
 	<meta property='og:type' content='website' />
 	<meta property='og:url' content='http://joakim.bording.no' />
 	<meta property='og:locale' content='nb_NO' />
@@ -46,7 +48,7 @@
 		</div>
 		<div class="page__content">
 			<h1>Joakim Bording</h1>
-			<p>Rådgiver, designer, utvikler og kursholder. Jeg kan hjelpe deg med å nå dine forretningsmål gjennom design. Jeg jobber som frilanser i Oslo og er åpen for oppdrag.</p>
+			<p><?php echo $introText; ?></p>
 			<dl class="info-list">
 				<div class="info-list__item info-list__item--large">
 					<div class="info info--large">
