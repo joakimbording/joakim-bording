@@ -1,12 +1,38 @@
 .page {
-  display: block;
-  max-width: $page-width;
-  margin: 0 auto;
-  padding: $spacing--xlarge $spacing;
+  background: $color__white;
   @include breakpoint(medium) {
-    padding-top: 7em;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
   }
   @include breakpoint(large) {
-    padding-top: 10em;
+    min-height: 100vh;
+  }
+  &__visual {
+    background: $color__secondary--light;
+    @include breakpoint(medium) {
+      position: relative;
+      flex-basis: 33.33%;
+      max-width: 33.33%;
+    }
+    @include breakpoint(large) {
+      min-height: 100vh;
+    }
+  }
+  &__content {
+    max-width: $page-width;
+    padding: $spacing--large $spacing $spacing--xlarge $spacing;
+    @include breakpoint(medium) {
+      padding-top: $spacing--xlarge;
+      padding-left: $spacing--xlarge;
+      padding-top: 7em;
+      flex-basis: 66.66%;
+      max-width: $page-width;
+    }
+    @include breakpoint(large) {
+      padding-top: 10em;
+      min-height: 100vh;
+    }
   }
 }

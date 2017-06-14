@@ -14,7 +14,7 @@ body {
     min-height: 100%;
     // Prevent top margin on children from bleeding outside top of body, creating annoying vertical scroll
     //padding-top: 5px;
-    background: $color__white;
+    background: $color__gray--light;
 }
 
 ::selection {

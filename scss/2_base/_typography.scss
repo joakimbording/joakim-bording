@@ -179,6 +179,9 @@ a, .link {
     color: $color__primary;
     //border-bottom-color: $color__primary;
   }
+  &::selection {
+    text-shadow: -1px -1px 0 $color__secondary--light, 1px -1px 0 $color__secondary--light, -1px 1px 0 $color__secondary--light, 1px 1px 0 $color__secondary--light;
+  }
 }
 
 .link--white {

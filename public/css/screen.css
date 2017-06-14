@@ -43,16 +43,16 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background: #fff; }
+  background: #efefef; }
 
 ::-moz-selection {
-  background: #ff9894; }
+  background: #71baff; }
 
 ::selection {
-  background: #ff9894; }
+  background: #71baff; }
 
 ::-moz-selection {
-  background: #ff9894; }
+  background: #71baff; }
 
 *:focus {
   outline-offset: 5px;
@@ -110,7 +110,7 @@ h1 {
     h1 {
       margin-top: 0;
       font-size: 2.00rem; } }
-  @media (min-width: 51.25rem) {
+  @media (min-width: 45rem) {
     h1 {
       font-size: 2.50rem; } }
 
@@ -216,6 +216,10 @@ a, .link {
     background-image: linear-gradient(to top, transparent, transparent 0px, #2779C5 0px, #2779C5 1px, transparent 1px); }
   a:active, .link:active {
     color: #2779C5; }
+  a::-moz-selection, .link::-moz-selection {
+    text-shadow: -1px -1px 0 #71baff, 1px -1px 0 #71baff, -1px 1px 0 #71baff, 1px 1px 0 #71baff; }
+  a::selection, .link::selection {
+    text-shadow: -1px -1px 0 #71baff, 1px -1px 0 #71baff, -1px 1px 0 #71baff, 1px 1px 0 #71baff; }
 
 .link--white {
   color: #fff; }
@@ -229,16 +233,45 @@ Design components, seperated as blocks.
 
 */
 .page {
-  display: block;
-  max-width: 37rem;
-  margin: 0 auto;
-  padding: 3.6rem 1rem; }
-  @media (min-width: 51.25rem) {
+  background: #fff; }
+  @media (min-width: 45rem) {
     .page {
-      padding-top: 7em; } }
-  @media (min-width: 68.75rem) {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+      box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1); } }
+  @media (min-width: 62.5rem) {
     .page {
-      padding-top: 10em; } }
+      min-height: 100vh; } }
+  .page__visual {
+    background: #71baff; }
+    @media (min-width: 45rem) {
+      .page__visual {
+        position: relative;
+        -ms-flex-preferred-size: 33.33%;
+            flex-basis: 33.33%;
+        max-width: 33.33%; } }
+    @media (min-width: 62.5rem) {
+      .page__visual {
+        min-height: 100vh; } }
+  .page__content {
+    max-width: 37rem;
+    padding: 1.8rem 1rem 3.6rem 1rem; }
+    @media (min-width: 45rem) {
+      .page__content {
+        padding-top: 3.6rem;
+        padding-left: 3.6rem;
+        padding-top: 7em;
+        -ms-flex-preferred-size: 66.66%;
+            flex-basis: 66.66%;
+        max-width: 37rem; } }
+    @media (min-width: 62.5rem) {
+      .page__content {
+        padding-top: 10em;
+        min-height: 100vh; } }
 
 .info {
   display: block;
@@ -287,3 +320,19 @@ Design components, seperated as blocks.
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
       max-width: 100%; }
+
+.visual {
+  display: block; }
+  @media (min-width: 45rem) {
+    .visual {
+      position: absolute;
+      width: 100%;
+      height: 100%; } }
+  .visual__image {
+    display: block;
+    width: 100%; }
+    @media (min-width: 45rem) {
+      .visual__image {
+        position: absolute;
+        height: 100%;
+        object-fit: cover; } }
