@@ -18,7 +18,7 @@
 	<meta property='og:type' content='website' />
 	<meta property='og:url' content='http://joakim.bording.no' />
 	<meta property='og:locale' content='nb_NO' />
-	<meta property="og:image" content="/images/landscape_joakim_bording.jpg" />
+	<meta property="og:image" content="http://joakim.bording.no/images/facebook_joakim_bording.png" />
 	<meta name='twitter:url' content='http://joakim.bording.no'>
 
   <link rel="stylesheet" href="/css/screen.css?<?php echo $versionSlug; ?>">
