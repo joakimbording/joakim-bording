@@ -300,6 +300,8 @@ Design components, seperated as blocks.
         padding: 3.6rem; } }
   .card__text-frame {
     max-width: 37rem; }
+    .card__text-frame *:last-child {
+      margin-bottom: 0; }
   @media (min-width: 45rem) {
     .card--flip .card__visual {
       -ms-flex-order: 2;

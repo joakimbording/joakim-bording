@@ -51,6 +51,9 @@
   }
   &__text-frame {
     max-width: $page-width;
+    *:last-child {
+      margin-bottom: 0;
+    }
   }
   &--flip {
     @include breakpoint(medium) {
