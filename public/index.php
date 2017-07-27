@@ -123,8 +123,8 @@
 		</div>
 		<div class="card card--full-center">
 			<div class="card__content">
-				<h2 class="h1">Noen flere jeg har jobbet for</h2>
-				<p class="h3">Skandiabanken, Blindeforbundet, IMDi, SSB, One Call, Gilde, OBOS Forsikring, OBOS Banken, OBOS Forretningsbygg, C-Optikk, Bluegarden, Felleskjøpet, Revisorforeningen, Finansforbundet, NHO, Oslo Børs, Penger.no, Felleskjøpet, Sparebank1 SR-Bank, Statskog, Fearless Play, NKSS og flere.</p>
+				<h2 class="h2">Noen flere jeg har jobbet for</h2>
+				<p>Skandiabanken, Blindeforbundet, IMDi, SSB, One Call, Gilde, OBOS Forsikring, OBOS Banken, OBOS Forretningsbygg, C-Optikk, Bluegarden, Felleskjøpet, Revisorforeningen, Finansforbundet, NHO, Oslo Børs, Penger.no, Felleskjøpet, Sparebank1 SR-Bank, Statskog, Fearless Play, NKSS og flere.</p>
 			</div>
 		</div>
 		<div class="card card--flip">
