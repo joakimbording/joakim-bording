@@ -4,7 +4,7 @@
 	$introText = 'Rådgiver, designer, utvikler og kursholder. Jeg kan hjelpe deg med å nå dine forretningsmål gjennom design. Jeg jobber som frilanser i Oslo og er åpen for oppdrag.';
 ?>
 <!doctype html>
-
+<html lang="nb">
 <head>
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,32 +52,32 @@
 				<div class="card__text-frame">
 					<h1>Joakim Bording</h1>
 					<p><?php echo $introText; ?></p>
-					<dl class="info-list">
+					<div class="info-list">
 						<div class="info-list__item info-list__item--large">
 							<div class="info info--large">
-								<dt class="info__title">E-post: </dt>
-								<dd class="info__value"><a href="mailto:joakim@bording.no" aria-label="E-post: joakim@bording.no">joakim@bording.no</a></dd>
+								<h3 class="info__title">E-post: </h3>
+								<p class="info__value"><a href="mailto:joakim@bording.no" aria-label="E-post: joakim@bording.no">joakim@bording.no</a></p>
 							</div>
 						</div>
 						<div class="info-list__item">
 							<div class="info">
-								<dt class="info__title">Telefon: </dt>
-								<dd class="info__value"><a href="tel:91814458" aria-label="Telefon: 918 14 458">918 14 458</a></dd>
+								<h3 class="info__title">Telefon: </h3>
+								<p class="info__value"><a href="tel:91814458" aria-label="Telefon: 918 14 458">918 14 458</a></p>
 							</div>
 						</div>
 						<div class="info-list__item">
 							<div class="info">
-								<dt class="info__title">Twitter: </dt>
-								<dd class="info__value"><a href="https://twitter.com/spispeas" aria-label="Twitter brukernavn: @spispeas">@spispeas</a></dd>
+								<h3 class="info__title">Twitter: </h3>
+								<p class="info__value"><a href="https://twitter.com/spispeas" aria-label="Twitter brukernavn: @spispeas">@spispeas</a></p>
 							</div>
 						</div>
 						<div class="info-list__item">
 							<div class="info">
-								<dt class="info__title">LinkedIn: </dt>
-								<dd class="info__value"><a href="http://no.linkedin.com/pub/joakim-bording/0/932/6a9/no"  aria-label="LinkedIn profil">Profil</a></dd>
+								<h3 class="info__title">LinkedIn: </h3>
+								<p class="info__value"><a href="http://no.linkedin.com/pub/joakim-bording/0/932/6a9/no"  aria-label="LinkedIn profil">Profil</a></p>
 							</div>
 						</div>
-					</dl>
+					</div>
 				</div>
 			</div>
 	  </div>
@@ -111,14 +111,20 @@
 			<div class="card__content">
 				<div class="card__text-frame">
 					<h2 class="h1"><small>Case: </small>OBOS Designsystem</h2>
-					<p>Vi moderniserte OBOS konsernet sin visuelle identitet på digitale flater. Arbeidet ble dokumentert og utformet i en nettbasert merkevarehåndbok. Designsystemet og front-end koden som jeg utviklet for styleguiden har blitt brukt videre av samarbeidspartnere til å redesigne <a href="https://www.obos.no/">obos.no</a> (lanseres snart).</p>
-					<p>Jeg hadde ansvar for interaksjonsdesign og front-end utvikling i prosjektet. Jeg hadde den primære kundekontakten med OBOS og redesignet navigasjonsstrukturen til obos.no i løpet av prosjektet.</p>
+					<p>Vi moderniserte OBOS konsernet sin visuelle identitet på digitale flater. Arbeidet ble dokumentert og utformet i en nettbasert merkevarehåndbok. Designsystemet og front-end koden som jeg utviklet for styleguiden har blitt brukt videre av samarbeidspartnere til å redesigne obos.no.</p>
+					<p>Jeg hadde ansvar for interaksjonsdesign og front-end utvikling i prosjektet. Jeg hadde den primære kundekontakten med OBOS og redesignet navigasjonsstruktur og malverk for obos.no i løpet av prosjektet.</p>
 					<div class="info">
 						<span class="info__title">Se resultatet:</span>
-						<span class="info__value"><a href="https://merkevare.obos.no/">merkevare.obos.no</a></span>
+						<span class="info__value"><a href="https://merkevare.obos.no/">merkevare.obos.no</a> og <a href="https://www.obos.no/">obos.no</a></span>
 					</div>
 					<p><small>Prosjektet ble gjort våren 2017 i <a href="https://www.netliferesearch.com/">Netlife Research</a> sammen med <a href="https://www.netliferesearch.com/eivind-molvaer">Eivind Molvær</a> og <a href="https://www.linkedin.com/in/anette-mork-8b23a81b/">Anette Mork</a>.</small></p>
 				</div>
+			</div>
+		</div>
+		<div class="card card--full-center">
+			<div class="card__content">
+				<h2 class="h1">Noen flere jeg har jobbet for</h2>
+				<p class="h3">Skandiabanken, Blindeforbundet, IMDi, SSB, One Call, Gilde, OBOS Forsikring, OBOS Banken, OBOS Forretningsbygg, C-Optikk, Bluegarden, Felleskjøpet, Revisorforeningen, Finansforbundet, NHO, Oslo Børs, Penger.no, Felleskjøpet, Sparebank1 SR-Bank, Statskog, Fearless Play, NKSS og flere.</p>
 			</div>
 		</div>
 		<div class="card card--flip">
@@ -130,12 +136,14 @@
 					<h2 class="h1">La oss ta en kaffe!</h2>
 					<p>Det er mange gode kafeér ikke langt fra kontoret mitt for eksempel?</p>
 					<div class="info">
-						<span class="info__title">Telefon: </dt>
-						<span class="info__value"><a href="tel:91814458" aria-label="Telefon: 918 14 458">918 14 458</a></dd>
+						<h3 class="info__title">Telefon: </h3>
+						<p class="info__value"><a href="tel:91814458" aria-label="Telefon: 918 14 458">918 14 458</a></p>
 					</div>
 				</div>
 			</div>
+		</div>
 	</main>
  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<?php echo $googleMapAPI; ?>&callback=initMap"
  type="text/javascript"></script>
 </body>
+</html>

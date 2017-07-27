@@ -96,4 +96,29 @@
       }
     }
   }
+  &--full-center {
+    @include breakpoint(large) {
+      min-height: auto;
+    }
+    .card__content {
+      background: $color__black;
+      color: $color__white;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: block;
+      padding-top: $spacing--xlarge;
+      padding-bottom: $spacing--xlarge;
+      max-width: 100%;
+      flex-basis: 100%;
+      @include breakpoint(large) {
+        min-height: auto;
+        text-align: center;
+      }
+      a {
+          color: $color__white;
+          text-shadow: none;
+          background-image: linear-gradient(to top, transparent, transparent 0px, $color__white 0px, $color__white 1px, transparent 1px);
+      }
+    }
+  }
 }
