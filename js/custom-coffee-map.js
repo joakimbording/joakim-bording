@@ -210,8 +210,8 @@ var markers = [
 ["Kontoret mitt", 59.9144185, 10.7396414, "https://www.google.no/maps/place/Rosenkrantz'+gate+10,+0159+Oslo/@59.9144442,10.7375236,17z/data=!3m1!4b1!4m5!3m4!1s0x46416e7d14f254e9:0xae4ee237206e6a58!8m2!3d59.9144442!4d10.7397123?hl=no", officeImage],
 ["Lunsj på Cin Cin Café", 59.9146286, 10.7415599, "https://www.google.no/maps/place/Cin+Cin+Caf%C3%A9/@59.9146286,10.7415599,19.36z/data=!4m13!1m7!3m6!1s0x46416e7d14f254e9:0xae4ee237206e6a58!2sRosenkrantz'+gate+10,+0159+Oslo!3b1!8m2!3d59.9144442!4d10.7397123!3m4!1s0x0:0xd845841da547d1f8!8m2!3d59.914705!4d10.7420399?hl=no", coffeeImage],
 ["Kaffe på Kaffebrenneriet", 59.9157461, 10.7377053, "https://www.google.no/maps/place/Kaffebrenneriet+avd+Universitetsgata/@59.9157461,10.7377053,18.38z/data=!4m13!1m7!3m6!1s0x46416e7d14f254e9:0xae4ee237206e6a58!2sRosenkrantz'+gate+10,+0159+Oslo!3b1!8m2!3d59.9144442!4d10.7397123!3m4!1s0x0:0x7b38b818cad796c2!8m2!3d59.9157299!4d10.7376578?hl=no", coffeeImage],
-["Middag på HåndtverkerStuene", 59.9149927, 10.7391957, "https://www.google.no/maps/place/H%C3%A5ndverkerStuene/@59.9149927,10.7391957,19.61z/data=!4m13!1m7!3m6!1s0x46416e7d14f254e9:0xae4ee237206e6a58!2sRosenkrantz'+gate+10,+0159+Oslo!3b1!8m2!3d59.9144442!4d10.7397123!3m4!1s0x0:0x81a2624346e8c852!8m2!3d59.914961!4d10.7396541?hl=no", coffeeImage],
-["Kaffe på Stockfleths", 59.9137975, 10.7403254, "https://www.google.no/maps/place/Stockfleths/@59.9137975,10.7403254,19.03z/data=!4m13!1m7!3m6!1s0x46416e7d14f254e9:0xae4ee237206e6a58!2sRosenkrantz'+gate+10,+0159+Oslo!3b1!8m2!3d59.9144442!4d10.7397123!3m4!1s0x0:0x5cade9e2dcdcd185!8m2!3d59.9136653!4d10.7412728?hl=no", coffeeImage],
+["Kaffe på Stockfleths", 59.9154299, 10.7410863, "https://www.google.no/maps/place/Stockfleths/@59.9154299,10.7410863,19z/data=!4m5!3m4!1s0x0:0x682b24b398762048!8m2!3d59.9154452!4d10.7418387?hl=no", coffeeImage],
+["Kaffe på Stockfleths", 59.9136659, 10.7407253, "https://www.google.no/maps/place/Stockfleths/@59.9137975,10.7403254,19.03z/data=!4m13!1m7!3m6!1s0x46416e7d14f254e9:0xae4ee237206e6a58!2sRosenkrantz'+gate+10,+0159+Oslo!3b1!8m2!3d59.9144442!4d10.7397123!3m4!1s0x0:0x5cade9e2dcdcd185!8m2!3d59.9136653!4d10.7412728?hl=no", coffeeImage],
 ["Lunsj på Taqueria", 59.9142728, 10.7374968, "https://www.google.no/maps/place/Taqueria/@59.914359,10.7377632,21z/data=!4m5!3m4!1s0x0:0xc72ae2ba401daca6!8m2!3d59.914388!4d10.7376887?hl=no", coffeeImage]
 ];
 
@@ -248,7 +248,7 @@ window.initMap = function() {
          map: map,
          icon: {
            url: markers[i][4],
-           labelOrigin: new google.maps.Point(30, 60)
+           labelOrigin: new google.maps.Point(30, 65)
          },
          label: markers[i][0]
      });
