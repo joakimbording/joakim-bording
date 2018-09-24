@@ -36,4 +36,10 @@
         color: $color__primary;
       }
     }
+    &--highlighted {
+      border-left: $color__black--light 4px solid;
+      padding-left: $spacing;
+      padding-top: $spacing;
+      padding-bottom: $spacing;
+    }
 }

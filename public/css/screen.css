@@ -105,7 +105,10 @@ h6,
   h3 small,
   h4 small,
   h5 small,
-  h6 small, .info--large .info__value small, .info--huge .info__value small, .info__value small {
+  h6 small,
+  .info--large .info__value small,
+  .info--huge .info__value small,
+  .info__value small {
     display: block;
     color: #777;
     font-weight: 400;
@@ -385,6 +388,11 @@ Design components, seperated as blocks.
   .info--large .info__value, .info--huge .info__value {
     margin: 0;
     color: #2779C5; }
+  .info--highlighted {
+    border-left: #444 4px solid;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
 
 .info-list {
   display: -ms-flexbox;

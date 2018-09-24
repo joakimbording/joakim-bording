@@ -1,7 +1,7 @@
 <?php
 	$versionSlug = 'v1.2';
 	$googleMapAPI = 'AIzaSyB95dBtXMULdBz11DXjdQBRw6YPUuU8TlM';
-	$introText = 'Rådgiver, designer, utvikler og kursholder. Jeg kan hjelpe deg med å nå dine forretningsmål gjennom design. Jeg jobber som frilanser i Oslo og er åpen for oppdrag.';
+	$introText = 'Rådgiver, designer, utvikler og kursholder. Jeg kan hjelpe deg med å nå dine forretningsmål gjennom design.';
 ?>
 <!doctype html>
 <html lang="nb">
@@ -54,6 +54,12 @@
 					<p><?php echo $introText; ?></p>
 					<div class="info-list">
 						<div class="info-list__item info-list__item--large">
+							<div class="info info--large info--highlighted">
+								<h3 class="info__title">Jeg har starte designbyrået Behalf sammen med de flinkeste designere jeg kjenner. Besøk oss i Behalf: </h3>
+								<p class="info__value"><a href="http://www.behalf.no">behalf.no</a></p>
+							</div>
+						</div>
+						<div class="info-list__item  info-list__item--large">
 							<div class="info info--large">
 								<h3 class="info__title">E-post: </h3>
 								<p class="info__value"><a href="mailto:joakim@bording.no" aria-label="E-post: joakim@bording.no">joakim@bording.no</a></p>
@@ -124,7 +130,7 @@
 		<div class="card card--full-center">
 			<div class="card__content">
 				<h2 class="h2">Noen flere jeg har jobbet for</h2>
-				<p>Skandiabanken, Blindeforbundet, IMDi, SSB, One Call, Gilde, OBOS Forsikring, OBOS Banken, OBOS Forretningsbygg, C-Optikk, Bluegarden, Felleskjøpet, Revisorforeningen, Finansforbundet, NHO, Oslo Børs, Penger.no, Felleskjøpet, Sparebank1 SR-Bank, Statskog, Fearless Play, NKSS og flere.</p>
+				<p>Teston, Urban Sharing, WWF, Skandiabanken, Blindeforbundet, IMDi, SSB, One Call, Gilde, OBOS Forsikring, OBOS Banken, OBOS Forretningsbygg, C-Optikk, Bluegarden, Felleskjøpet, Revisorforeningen, Finansforbundet, NHO, Oslo Børs, Penger.no, Felleskjøpet, Sparebank1 SR-Bank, Statskog, Fearless Play, NKSS og flere.</p>
 			</div>
 		</div>
 		<div class="card card--flip">
