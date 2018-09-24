@@ -1,5 +1,5 @@
 <?php
-	$versionSlug = 'v1.2';
+	$versionSlug = 'v1.3';
 	$googleMapAPI = 'AIzaSyB95dBtXMULdBz11DXjdQBRw6YPUuU8TlM';
 	$introText = 'Rådgiver, designer, utvikler og kursholder. Jeg kan hjelpe deg med å nå dine forretningsmål gjennom design.';
 ?>
